@@ -3,7 +3,7 @@ Utility to collect time and place of lectures for each individual first year stu
 
 
 ## TODO
-- [ ] Downloader
+- [X] Downloader
 - [ ] Scraper
 - [ ] Tests
 - [ ] Checking for changes

@@ -10,7 +10,7 @@ URL = "https://www.df.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/
 
 def main() -> None:
     """Main function to run"""
-    download_file(url=URL, path=BASE_DIR)
+    download_file(url=URL, base_path=BASE_DIR)
 
 
 if __name__ == "__main__":
