@@ -15,8 +15,11 @@ def main() -> None:
     """Main function to run"""
     download_file(url=URL, file_name=FILE_NAME, directory=DOWNLOADS_DIR)
     convert_file(directory=DOWNLOADS_DIR)
-    write_xlsx(read_file(directory=DOWNLOADS_DIR,
-               file_name=FILE_NAME), file_name=FILE_NAME, directory=DOWNLOADS_DIR)
+
+    dataframe = read_file(directory=DOWNLOADS_DIR, file_name=FILE_NAME)
+    print(dataframe.head)
+    write_xlsx(dataframe=dataframe, file_name=FILE_NAME,
+               directory=DOWNLOADS_DIR)
 
 
 if __name__ == "__main__":
